@@ -1,3 +1,7 @@
+body {
+    padding-bottom: 50px;
+}
+
 .img-center {
     background-repeat: no-repeat;
     background-size: cover;
@@ -48,5 +52,23 @@
             font-weight: bold;
             color: #F18948;
         }
+    }
+}
+
+/* ADVANTAGES */
+#payPlate {
+    color: #F18948;
+}
+
+.card {
+    padding: 30px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    & .card-img {
+        width: 60px;
+        justify-content: center;
     }
 }
