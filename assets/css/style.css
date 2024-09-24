@@ -1,5 +1,4 @@
 body {
-    padding-bottom: 50px;
     overflow-x: hidden;
 }
 
@@ -216,5 +215,17 @@ main {
                 border-bottom-left-radius: 10px;            
             }
         }
+    }
+}
+
+/* FOOTER */
+#footer {
+    background-color: #F9EBDE;
+    border-bottom: 20px solid #F18948;
+    padding-bottom: 30px;
+    & h3 {
+        font-size: 15px;
+        font-weight: bold;
+        margin-bottom: 10px;
     }
 }
