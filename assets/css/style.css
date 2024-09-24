@@ -2,6 +2,10 @@ body {
     padding-bottom: 50px;
 }
 
+main {
+    padding: 0 !important;
+}
+
 .img-center {
     background-repeat: no-repeat;
     background-size: cover;
@@ -71,4 +75,11 @@ body {
         width: 60px;
         justify-content: center;
     }
+}
+
+/* DEMO */
+.demo {
+    border-top: 20px solid #F18948;
+    height: 75vh;
+    background-image: url(../img/demo.png);
 }
