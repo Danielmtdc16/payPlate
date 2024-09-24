@@ -78,8 +78,39 @@ main {
 }
 
 /* DEMO */
+
 .demo {
     border-top: 20px solid #F18948;
     height: 75vh;
     background-image: url(../img/demo.png);
+    position: relative;
+    border-bottom: 20px solid #F18948;
+    & .card-demo {
+        width: auto;
+        background-color: #FFF;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        padding: 35px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        border-radius: 20px;
+
+        & h1 {
+            font-size: 32px;
+            font-weight: bold;
+        }
+        & h3 {
+            font-size: 24px;
+            font-weight: normal;
+        }
+        & img {
+            width: 45px;
+        }
+        & p {
+            font-size: 16px;
+            color: #F18948;
+        }
+    }
 }
