@@ -38,7 +38,7 @@ main {
     & p {
         font-size: 20px;
     }
-    
+
     & .row {
         & .col {
             display: flex;
@@ -47,10 +47,11 @@ main {
             align-items: center;
             gap: 10px;
         }
+
         & .icons-banner-1 {
             max-width: 30px;
         }
-    
+
         & p {
             font-size: 13px;
             font-weight: bold;
@@ -64,13 +65,14 @@ main {
     color: #F18948;
 }
 
-.card--advantages{
+.card--advantages {
     padding: 30px;
     height: 400px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     gap: 20px;
+
     & .card-img {
         width: 60px;
         justify-content: center;
@@ -78,13 +80,13 @@ main {
 }
 
 /* DEMO */
-
 .demo {
     border-top: 20px solid #F18948;
-    height: 75vh;
+    height: 80vh;
     background-image: url(../img/demo.png);
     position: relative;
     border-bottom: 20px solid #F18948;
+
     & .card-demo {
         width: auto;
         background-color: #FFF;
@@ -101,13 +103,16 @@ main {
             font-size: 32px;
             font-weight: bold;
         }
+
         & h3 {
             font-size: 24px;
             font-weight: normal;
         }
+
         & img {
             width: 45px;
         }
+
         & p {
             font-size: 16px;
             color: #F18948;
@@ -119,10 +124,12 @@ main {
 .subscription {
     background-color: #F9EBDE;
     border-bottom: 20px solid #F18948;
+
     & .card-subscription-plan {
         border-radius: 20px;
         gap: 25px;
         padding: 25px;
+
         & .first-row {
 
             & img {
@@ -150,6 +157,7 @@ main {
 
         & .second-row {
             color: #F18948;
+
             & #plan-price {
                 font-size: 30px;
                 font-weight: bold;
@@ -157,12 +165,13 @@ main {
                 & #month {
                     font-size: 15px;
                 }
-            }
 
-            & p {
-                margin-bottom: 0;
-                font-weight: bold;
-                color: black;
+                & #offer {
+                    font-size: 15px;
+                    font-weight: bold;
+                    color: black;
+                    margin-left: 15px;
+                }
             }
         }
 
@@ -170,6 +179,7 @@ main {
             display: flex;
             flex-direction: column;
             gap: 10px;
+
             & li {
                 display: flex;
                 align-items: center;
@@ -188,6 +198,7 @@ main {
 /* FREQUENTLY ASKED QUESTIONS */
 .frequently-asked {
     background-color: #F9EBDE;
+
     & .container {
         & .accordion {
             display: flex;
@@ -197,7 +208,7 @@ main {
             & .accordion-item {
                 border-radius: 15px !important;
                 padding: 7px;
-                box-shadow: 7px 10px 18px -10px rgba(0,0,0,0.75);
+                box-shadow: 7px 10px 18px -10px rgba(0, 0, 0, 0.75);
 
                 & .accordion-button {
                     border-radius: 10px;
@@ -206,13 +217,15 @@ main {
                 & .accordion-button:not(.collapsed) {
                     background-color: rgba(232, 232, 232, 0.629) !important;
                 }
+
                 & .accordion-button:focus {
                     box-shadow: none;
                 }
             }
+
             & .accordion-item:last-of-type>.accordion-header .accordion-button.collapsed {
-                border-bottom-right-radius:10px;
-                border-bottom-left-radius: 10px;            
+                border-bottom-right-radius: 10px;
+                border-bottom-left-radius: 10px;
             }
         }
     }
@@ -223,12 +236,133 @@ main {
     background-color: #F9EBDE;
     border-bottom: 20px solid #F18948;
     padding-bottom: 30px;
+
     & h3 {
         font-size: 15px;
         font-weight: bold;
         margin-bottom: 10px;
     }
+
     & a {
         color: red;
     }
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 560px) {
+    .informations {
+        & h1 {
+            font-size: 25px;
+        }
+
+        & p {
+            font-size: 15px;
+        }
+
+        & .row {
+            & .col {
+                & .icons-banner-1 {
+                    max-width: 20px;
+                }
+
+                & p {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+
+    .card--advantages {
+        & p {
+            font-size: 13px;
+        }
+    }
+
+    .demo {
+        .card-demo {
+            & h1 {
+                font-size: 20px;
+            }
+
+            & h3 {
+                font-size: 20px;
+            }
+
+            & p {
+                width: auto;
+                font-size: 12px;
+            }
+        }
+    }
+
+    .subscription {
+        & .card-subscription-plan {
+            & .second-row {
+                & #plan-price {
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 462px) {
+    .informations {
+        margin-right: 30px;
+
+        & p {
+            font-size: 15px;
+        }
+
+        & .row {
+            & .col {
+                & p {
+                    font-size: 10px;
+                    width: auto;
+                }
+            }
+        }
+    }
+
+    .demo {
+        height: 90vh;
+
+        & .card-demo {
+            margin-right: 30px;
+        }
+    }
+
+    .subscription {
+        & .card-subscription-plan {
+            & .second-row {
+                & #plan-price {
+                    font-size: 20px;
+
+                    & #offer {
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            & ul {
+                & li {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .subscription {
+        & .card-subscription-plan {
+            & h3 {
+                font-size: 18px;
+            }
+
+            & p {
+                font-size: 12px;
+            }
+        }
+    }   
 }
