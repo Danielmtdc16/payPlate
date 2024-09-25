@@ -250,6 +250,9 @@ main {
 
 /* MEDIA QUERIES */
 @media (max-width: 560px) {
+    .banner-1 {
+        height: 60vh;
+    }
     .informations {
         & h1 {
             font-size: 25px;
@@ -354,6 +357,9 @@ main {
 }
 
 @media (max-width: 425px) {
+    .banner-1 {
+        height: 70vh;
+    }
     .subscription {
         & .card-subscription-plan {
             & h3 {
@@ -365,4 +371,15 @@ main {
             }
         }
     }   
+}
+
+@media (max-height: 520px) {
+    .informations {
+        & h1 {
+            font-size: 25px;
+        }
+        & p {
+            font-size: 15px;
+        }
+    }
 }
