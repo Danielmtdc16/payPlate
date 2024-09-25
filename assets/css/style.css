@@ -9,11 +9,12 @@ main {
 .img-center {
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .banner-1 {
     z-index: 0;
-    height: 80vh;
+    height: 70vh;
     background-image: url('../img/banner-1.png');
     position: relative;
     border-bottom: 20px solid #F18948;
@@ -373,6 +374,17 @@ main {
     }   
 }
 
+@media (max-width: 379px) {
+    .informations {
+        & h1 {
+            font-size: 18px;
+        }
+        & p {
+            font-size: 12px;
+        }
+    }
+}
+
 @media (max-height: 520px) {
     .informations {
         & h1 {
@@ -380,6 +392,36 @@ main {
         }
         & p {
             font-size: 15px;
+        }
+    }
+}
+@media (max-height: 580px) {
+    .informations {
+        & h1 {
+            font-size: 25px;
+        }
+        & p {
+            font-size: 15px;
+        }
+    }
+}
+@media (max-height: 510px) {
+    .informations {
+        & h1 {
+            font-size: 20px;
+        }
+        & p {
+            font-size: 12px;
+        }
+        & .row {
+            & .col {
+                & p {
+                    font-size: 10px;
+                }
+                & .icons-banner-1 {
+                    max-width: 20px;
+                }
+            }
         }
     }
 }
