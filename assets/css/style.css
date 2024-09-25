@@ -405,8 +405,9 @@ main {
         }
     }
 }
-@media (max-height: 510px) {
+@media (max-height: 530px) {
     .informations {
+        padding: 20px;
         & h1 {
             font-size: 20px;
         }
