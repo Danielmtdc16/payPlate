@@ -358,7 +358,7 @@ main {
 
 @media (max-width: 425px) {
     .banner-1 {
-        height: 65vh;
+        height: 60vh;
     }
     .subscription {
         & .card-subscription-plan {
