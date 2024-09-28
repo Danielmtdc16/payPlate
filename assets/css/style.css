@@ -59,6 +59,10 @@ main {
 }
 
 /* ADVANTAGES */
+.advantages {
+    padding: 40px;
+}
+
 #payPlate {
     color: #F18948;
 }
