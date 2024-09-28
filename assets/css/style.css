@@ -14,18 +14,15 @@ main {
 
 .banner-1 {
     z-index: 0;
-    height: 70vh;
+    height: auto;
+    padding: 25px;
     background-image: url('../img/banner-1.png');
-    position: relative;
     border-bottom: 20px solid #F18948;
 }
 
 .informations {
-    width: auto;
+    width: 50%;
     background-color: #FFF;
-    position: absolute;
-    left: 25px;
-    top: 25px;
     padding: 40px;
     display: flex;
     flex-direction: column;
@@ -83,21 +80,18 @@ main {
 /* DEMO */
 .demo {
     border-top: 20px solid #F18948;
-    height: 80vh;
+    height: auto;
+    padding: 25px;
     background-image: url(../img/demo.png);
-    position: relative;
     border-bottom: 20px solid #F18948;
 
     & .card-demo {
-        width: auto;
+        width: 50%;
         background-color: #FFF;
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        padding: 35px;
+        padding: 40px;
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 30px;
         border-radius: 20px;
 
         & h1 {
@@ -250,10 +244,19 @@ main {
 }
 
 /* MEDIA QUERIES */
-@media (max-width: 560px) {
-    .banner-1 {
-        height: 60vh;
+@media (max-width: 960px) {
+    .informations {
+        width: 80%;
     }
+    .demo {
+        .card-demo {
+            width: 80%;
+        }
+    }
+}
+
+@media (max-width: 560px) {
+    
     .informations {
         & h1 {
             font-size: 25px;
@@ -329,8 +332,6 @@ main {
     }
 
     .demo {
-        height: 90vh;
-
         & .card-demo {
             margin-right: 30px;
         }
@@ -358,9 +359,6 @@ main {
 }
 
 @media (max-width: 425px) {
-    .banner-1 {
-        height: 60vh;
-    }
     .subscription {
         & .card-subscription-plan {
             & h3 {
